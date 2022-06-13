@@ -1,0 +1,66 @@
+<!--Html file for CSC102
+Assignment: Launching your UAT Space Program HTML Document Tags
+written by Loryc Jess
+email: LORJESS@uat.edu-->
+<!DOCTYPE html>
+<!--html tag for assignment-->
+<html>
+<!--head tag for assignment-->
+
+<head>
+    <!--The title goes at the title bar -->
+    </title>
+    Prof. Prater's UAT Space Page
+    </tital>
+
+    <script src="code.js"></script>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <!--<style>
+        body {
+            background-color: maroon;
+            color: white
+        }
+    </style>-->
+</head>
+<!--body tag as required by assignment-->
+
+<body>
+    <!--logo for UATSpace-->
+    <img src="UATspaceLogo-1.jpg">
+    <!--fulfills header requirement-->
+    <h1 id="blink"> Rocket Launch Timer</h1>
+    <script> type="text/javasc"
+    var blink = document.getElementById('blink');
+    setInterval(function(){
+        blink.style.opacity = (blink.style.opacity == 0 ? 1 : 0);
+    }, 1500);
+    </script>
+    <!--paragrpagh tag for the assignment-->
+    <p>
+        this is a test of the paragrapgh tag. It is usualy meant for more than one line of text. That is why they call
+        it a paragraph tag.
+    </p>
+    <script>
+        //one line comment
+        //created a Textvalue comment
+        var textValue = "Test of the document.write() function";
+        //use that textValue comment
+        document.write(textValue)
+
+        /*multiline
+        comment*/
+    </script>
+    <br>
+    <br>
+    Time left before launch:<br>
+    <div id="countdownDisplay">Launch not initiated:</div>
+    <br>
+    <br>
+    <!--Button requirement from assignment-->
+    <button onclick="blastoffTimerV2();">Start</button>
+    <button>Stop</button>
+    <br>
+    <br>
+</body>
+
+</html>
